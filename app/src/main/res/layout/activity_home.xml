@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter your location"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:gravity="center"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter here"
+        android:gravity="center"
+        android:id="@+id/locInput"
+        android:layout_marginTop="40dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Proceed"
+        android:onClick="func"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nearest drop Point"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_marginTop="140dp"
+        />
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yelahanka Bus stop"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:textSize="20dp"
+        android:layout_marginTop="190dp"
+        />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:visibility="invisible"
+        android:text="Proceed to dump"
+        android:onClick="proceed"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="450dp"
+        android:text="You have dropped:0/1Kg" />
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="29dp"
+        android:layout_marginTop="480dp"
+        android:text="Disclaimer:Keep dropping the garbage to get more rewards" />
+</RelativeLayout>

@@ -4,55 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Register">
 
-    <TextView
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Enter email"
-        android:textStyle="bold"
-        android:textSize="20dp"
+        android:hint="Enter your name"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
         />
     <EditText
         android:id="@+id/emailInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter email here"
+        android:hint="Enter your email"
+        android:layout_marginTop="60dp"
         android:gravity="center"
-        android:layout_marginTop="30dp"
-        />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Enter password"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:layout_marginTop="70dp"
         />
     <EditText
         android:id="@+id/passInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter password here"
+        android:hint="Enter a password"
+        android:layout_marginTop="110dp"
         android:gravity="center"
-        android:layout_marginTop="100dp"
         />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login"
-        android:gravity="center"
-        android:onClick="myfunc"
-        android:layout_marginTop="160dp"
-        />
-
-    <Button
-        android:id="@+id/register"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="220dp"
         android:onClick="register"
-        android:text="New User? Register" />
-
+        android:layout_marginTop="160dp"
+        android:text="Register"
+        />
 
 </RelativeLayout>
